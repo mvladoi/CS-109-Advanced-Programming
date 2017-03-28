@@ -1,0 +1,18 @@
+FACT Father(Roger,John)
+FACT Mother(Marry,John)
+FACT Mother(Marry,John)
+FACT Father(Roger,Albert)
+FACT Mother(Marry,Albert)
+FACT Mother(Marry,Albert)
+FACT Mother(Marry,Albert)
+FACT Father(Allen,Margret)
+FACT Mother(Margret,Robert)
+FACT Mother(Margret,Bob)
+FACT Mother(Ella,Oprah,Ellen)
+
+RULE Parent($X,$Y):- OR Father($X,$Y) M3($X,$Y)
+RULE M3($X,$Y):- OR Mother($X,$Y) Mother($Y,$X,$Z)
+RULE M3($X,$Y):- OR Mother($X,$Y) Father($X,$Y))
+
+INFERENCE Parent($A,$B)
+INFERENCE M3($X,$Y) GF

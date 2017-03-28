@@ -1,0 +1,7 @@
+Use the Makefile in src/ to build the project.
+
+test/family_relation.sri is the same as the one on the project document
+test/test1.sri tests filtering of queries
+test/test2.sri tests an AND rule with 8 predicates, one of which has 5 parameters.
+test/test3.sri tests how the program handles duplicates, multiple instances of an OR rule with the same name, and having one of the predicate's parameters switched around.
+test/test4.sri demonstrates AND/OR threading being used simultaneously.

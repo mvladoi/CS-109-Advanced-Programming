@@ -1,0 +1,7 @@
+FACT foo(aa,bb)
+FACT foo(aa,bb)
+FACT bar(bb,cc)
+FACT baz(aa,bb,cc)
+FACT baz(dd,aa,bb,cc,ee)
+RULE fax($X,$Y):- AND foo($X,$Z) bar($Z,$Y) bar($Z,$Y) bar($Z,$Y) bar($Z,$Y) bar($Z,$Y) baz($X,$Z,$Y) baz($A,$X,$Z,$Y,$B)
+INFERENCE fax($X,$Y)
